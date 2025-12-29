@@ -274,7 +274,10 @@ There are no abstract indicators, scores, or inferred “health” metrics.
    
 The interface exists to answer one question:
 
+```
 Where is the next unit of input going?
+
+```
 
 Allocation is always forward-looking. The UI never edits the past.
 
