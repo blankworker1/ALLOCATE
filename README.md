@@ -49,7 +49,7 @@ ALLOCATE rests on a small set of physical truths that apply regardless of cultur
 
 **Time is irreversible**
 
-Decisions move forward; past allocations cannot be undone without additional cost. Measurement precedes control. You cannot allocate what you have not measured.
+Decisions move forward. Past allocations cannot be undone without additional cost. Measurement precedes control. You cannot allocate what you have not measured.
 
 These principles are not economic opinions. They are properties of the physical world.
 
