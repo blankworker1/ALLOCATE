@@ -162,7 +162,84 @@ This loop repeats continuously. There is no reset, rewind, or equilibrium state.
 
 The purpose of the Allocation Loop is not optimization, but honesty. It ensures that economic activity progresses in a way that is observable, constrained, and accountable to reality.
 
+## System Model
 
+ALLOCATE models an economic system as a set of autonomous nodes operating under shared physical measurement standards.
+
+Each node represents a single geographic location where energy is harvested, stored, consumed, or transformed. Nodes do not exchange energy. They coordinate, when necessary, through transferable records of irreversible work.
+
+### Node Structure
+
+Each node consists of four functional domains:
+- **Harvest**
+Energy entering the node from external sources. Examples include solar, wind, or other measurable inflows.
+- **Store**
+Temporary retention of energy or materials. Storage is bounded, lossy, and time-dependent.
+- **Consume**
+Direct use of energy or materials to sustain life, maintain infrastructure, or perform productive activity.
+- **Transform**
+Conversion of energy into durable, transferable records of work or into materially transformed outputs.
+
+These domains are distinct but interdependent. All operate under physical limits and time progression.
+
+## Flow Characteristics
+
+Inputs enter only through Harvest
+Outputs leave only through Consume or Transform
+Store mediates between inflow and use but does not eliminate loss
+No domain is cyclically self-sustaining
+There is no assumption of balance, equilibrium, or continuity of supply.
+
+## Allocation Domain
+
+Allocation governs how harvested and stored inputs are assigned across domains for each discrete time interval.
+
+Allocation decisions:
+- Are constrained by measurement and capacity
+- Apply only to future time intervals
+- Become irreversible once executed
+- Collapse alternative possibilities
+Allocation does not imply optimization. It expresses intent within constraint.
+
+## Node Autonomy
+
+Each node operates independently:
+- Local measurement
+- Local constraints
+- Local allocation decisions
+Nodes require no central authority to function. Survival and production are possible without external coordination.
+
+## Coordination Across Nodes
+
+When coordination across space or time is required, nodes may exchange records representing irreversible work already performed.
+These records:
+- Do not transmit energy
+- Do not guarantee future production
+- Do not bypass local constraints
+They function solely as a coordination and accounting mechanism.
+
+## Failure and Constraint Propagation
+
+If any domain reaches its limit:
+- Excess input is curtailed or dissipated
+- Allocation options are reduced
+- No compensatory abstraction is introduced
+- Constraint propagation is visible and immediate.
+
+## System Properties
+
+The system exhibits:
+- Physical honesty
+- Local autonomy
+- Global measurability
+- Linear scalability
+There is no requirement for trust beyond measurement. The model does not assume rational behavior, efficiency, or fairness. It only enforces consistency with physical reality.
+
+## Summary
+
+The system model describes an economy as a continuous process of constrained allocation occurring across autonomous nodes.
+Energy flows in. Time advances. Decisions are made. History accumulates.
+Nothing more is assumed.
 
 
 
