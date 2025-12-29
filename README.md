@@ -303,19 +303,22 @@ This is the system at rest.
 
 **Active State** - Configured: Allocation parameters are defined.
 The word ALLOCATING appears in a green rectangular background which indicates all domains are within measurable and executable bounds.
+
 Green - consistent with physics (not “good").
 
 **Constraint State** - Out of Parameter: one or more domains exceed capacity or violate timing constraints.
 The rectangular background turns red and the ALLOCATING letters pulse slowly to indicate unresolved tension.
+
 Red - allocation intent cannot be satisfied.
 
 ### Time as the Primary Axis
 
-Time is represented as a rotating ring:
-24 hours divided into 10-minute intervals. Each interval is allocatable.
-Current time is marked by a triangle at the top of the ring.
-Allocation applies only to future segments.
-Once time passes, the segment becomes immutable history.
+Time is represented as a rotating ring with 24 hours divided into 10-minute intervals.
+
+Each interval is allocatable. Current time is indicated by a triangle at the top of the ring. Day and night periods are represented by white and grey colored sections under the ring. Allocation applies only to future segments.
+
+Once time passes, the segment data becomes immutable history.
+
 The rest of the dashboard exists inside this ring.
 
 ### Domain Representation
@@ -335,6 +338,7 @@ No totals are hidden. No averages are smoothed.
 ### Minimal Interaction Modes
 
 Bottom task bar:
+
 - **V** View (read-only)
 - **A** Allocate (manual allocation input)
 - **S** Settings (system parameters)
