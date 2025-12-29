@@ -376,6 +376,7 @@ Curtailment is a choice, not a necessity
 ### Physical Configuration
 
 **Energy Harvest**
+
 Primary PV Array: 2 kW trailer-mounted solar
 Secondary PV Array: 1 kW auxiliary array
 Independent MPPT controllers
@@ -383,12 +384,14 @@ Secondary array switchable via breaker.
 Purpose: To demonstrate variable power generation inflow and simulate excess generation conditions.
 
 **Energy Storage**
+
 Battery bank (chemistry agnostic)
 Known capacity and round-trip efficiency
 SOC measured continuously
 Purpose: To show bounded, lossy storage and visualize saturation and decay.
 
 **Energy Consume**
+
 Controllable Load (resistive or programmable)
 Minimum survival / priority / baseline consumption
 Manually adjustable demand
@@ -403,6 +406,7 @@ Power draw known and fixed per unit, can be run as a variable load
 Purpose:To absorb excess energy, convert surplus energy into transferable proof-of-work receipts and demonstrate an “infinite sink” solution without grid reliance.
 
 **Grid Interface**
+
 Simulator for grid-tie / curtailment logic
 Purpose:To show traditional curtailment response, energy use inefficiency and economic loss via forced shutdown. Grid connection is not a dependency.
 
@@ -411,17 +415,21 @@ Purpose:To show traditional curtailment response, energy use inefficiency and ec
 ### Harvest
 Instantaneous power (W)
 Cumulative energy (Wh)
+
 ### Store
 State of charge (%)
 Energy in/out (Wh)
 Loss over time
+
 ### Consume
 Load draw (W)
 Energy used (Wh)
+
 ### Transform
 Miner power (W)
 Hash rate
 Bitcoin output (sats)
+
 ### Allocation
 Allocation split (%)
 Allocation timeline
@@ -456,10 +464,5 @@ If allocation works here, it works anywhere. If it fails here, it fails honestly
 
 Links:
 
-docs/energy-economy.md
 
-docs/allocation-economics.md
 
-design/dashboard-mockups/
-
-hardware/demo-node.md
