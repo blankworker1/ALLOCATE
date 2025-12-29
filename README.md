@@ -344,7 +344,7 @@ The rest of the dashboard exists inside this ring.
 
 ### Domain Representation
 
-The four domains — Harvest, Store, Consume, Transform — appear as distinct regions with:
+The four domains — **Harvest, Store, Consume, Transform** — appear as distinct regions with:
 
 Current capacity
 
