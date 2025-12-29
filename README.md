@@ -256,7 +256,7 @@ Nothing more is assumed.
 
 ## Dashboard and Interface Philosophy
 
-The dashboard is not a control panel in the traditional sense. It is an instrument.An integral part of the system. Its purpose is to make constraints visible, allocation explicit, and irreversibility legible over time.
+The dashboard is not a control panel in the traditional sense. It is an instrument and an integral part of the system. Its purpose is to make constraints visible, allocation explicit, and irreversibility legible over time.
 
 The interface does not simulate the system. It is the system’s public surface.
 
