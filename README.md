@@ -145,17 +145,17 @@ Measurement does not determine value. It defines feasibility.
 ## The Allocation Loop
 
 The Allocation Loop describes the continuous process by which economic activity unfolds under constraint.
-**Measure**
+- **Measure**
 Current state is observed: available energy, stored capacity, active loads, time position.
-**Constrain**
+- **Constrain**
 Physical limits are applied: inflow bounds, storage limits, rate caps, and time progression.
-**Allocate**
+- **Allocate**
 Inputs are assigned among competing uses for a discrete time interval. Allocation may be manual, automated, or assisted, but it must conform to constraints.
-**Execute**
+- **Execute**
 Allocation decisions are enacted. Energy is consumed, stored, transformed, or dissipated.
-**Record**
+- **Record**
 Outcomes are observed and logged. Allocations become history. Unused inputs are lost.
-**Advance Time**
+- **Advance Time**
 The system moves forward. Past allocations cannot be revised.
 
 This loop repeats continuously. There is no reset, rewind, or equilibrium state. Stability, when it occurs, is temporary and contingent.
