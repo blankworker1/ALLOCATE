@@ -270,12 +270,11 @@ Energy flows in. Time advances. Decisions are made. History accumulates.
 Nothing more is assumed.
 
 
-
+## Dashboard and Interface Philosophy
 
 
 ![Dashboard](https://emerald-real-clownfish-172.mypinata.cloud/ipfs/bafkreihfojw2nnntgyavxuj3rtpnpjsvidahf72spt23qr3s4ghxmclrgu)
 
-## Dashboard and Interface Philosophy
 
 The dashboard is not a control panel in the traditional sense. It is an instrument and an integral part of the system. Its purpose is to make constraints visible, allocation explicit, and irreversibility legible over time.
 
