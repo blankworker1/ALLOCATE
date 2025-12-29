@@ -355,6 +355,98 @@ The UI is intentionally austere.
 
 If the user feels discomfort, it is because constraint is visible.
 
+## Demonstration Node (D-NODE)
+
+The D-NODE is a physically complete, mobile, auditable instance of Allocation Economics. A real world system to demonstrate real world flows.
+
+It is designed to prove:
+
+Allocation, not pricing, is the core economic act
+
+Bitcoin mining absorbs surplus without distortion
+
+Curtailment is a choice, not a necessity
+
+### Physical Configuration
+
+**Energy Harvest**
+Primary PV Array: 2 kW trailer-mounted solar
+Secondary PV Array: 1 kW auxiliary array
+Independent MPPT controllers
+Secondary array switchable via breaker.
+Purpose: To demonstrate variable power generation inflow and simulate excess generation conditions.
+
+**Energy Storage**
+Battery bank (chemistry agnostic)
+Known capacity and round-trip efficiency
+SOC measured continuously
+Purpose: To show bounded, lossy storage and visualize saturation and decay.
+
+**Energy Consume**
+Controllable Load (resistive or programmable)
+Minimum survival / priority / baseline consumption
+Manually adjustable demand
+Purpose: To represent essential / discretionary energy use and trade-offs.
+
+**Energy Transform** 
+
+Bitcoin ASIC Mining Computers
+Primary Miner: Always available
+Secondary Miner: Activated by surplus conditions
+Power draw known and fixed per unit, can be run as a variable load
+Purpose:To absorb excess energy, convert surplus energy into transferable proof-of-work receipts and demonstrate an “infinite sink” solution without grid reliance.
+
+**Grid Interface**
+Simulator for grid-tie / curtailment logic
+Purpose:To show traditional curtailment response, energy use inefficiency and economic loss via forced shutdown. Grid connection is not a dependency.
+
+## Measured Quantities
+
+### Harvest
+Instantaneous power (W)
+Cumulative energy (Wh)
+### Store
+State of charge (%)
+Energy in/out (Wh)
+Loss over time
+### Consume
+Load draw (W)
+Energy used (Wh)
+### Transform
+Miner power (W)
+Hash rate
+Bitcoin output (sats)
+### Allocation
+Allocation split (%)
+Allocation timeline
+Curtailment events
+
+## Demonstration Scenarios
+
+The D-NODE equipment will model the following: Midday Solar Surplus, Battery capacity near full, Low energy consumption, Secondary PV switched on, Secondary miner activation, Zero curtailment, Traditional curtailment, ASIC hardware failure, Excess energy management, Power supply loss, Scarcity Mode, Low solar harvest, Battery storage depleted.
+
+**Automated Allocation** - consumption is prioritized, transform minimized.
+
+**Manual Reallocation** - User adjusts allocation targets, constraints enforce limits, immediate feedback.
+
+## What the Demo Proves
+
+Excess energy is not a problem if allocation exists
+
+ASIC miners act as load balancer, not speculation
+
+Physical limits enforce economic honesty
+
+Allocation decisions matter more than prices
+
+No narratives are required. The system speaks.
+
+## Note
+
+This demo is not a pilot for scale. It is an economic truth machine.
+
+If allocation works here, it works anywhere. If it fails here, it fails honestly.
+
 
 Links:
 
