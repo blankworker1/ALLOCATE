@@ -182,7 +182,7 @@ Conversion of energy into durable, transferable records of work or into material
 
 These domains are distinct but interdependent. All operate under physical limits and time progression.
 
-## Flow Characteristics
+### Flow Characteristics
 
 Inputs enter only through Harvest
 Outputs leave only through Consume or Transform
@@ -190,7 +190,7 @@ Store mediates between inflow and use but does not eliminate loss
 No domain is cyclically self-sustaining
 There is no assumption of balance, equilibrium, or continuity of supply.
 
-## Allocation Domain
+### Allocation Domain
 
 Allocation governs how harvested and stored inputs are assigned across domains for each discrete time interval.
 
@@ -201,7 +201,7 @@ Allocation decisions:
 - Collapse alternative possibilities
 Allocation does not imply optimization. It expresses intent within constraint.
 
-## Node Autonomy
+### Node Autonomy
 
 Each node operates independently:
 - Local measurement
@@ -209,7 +209,7 @@ Each node operates independently:
 - Local allocation decisions
 Nodes require no central authority to function. Survival and production are possible without external coordination.
 
-## Coordination Across Nodes
+### Coordination Across Nodes
 
 When coordination across space or time is required, nodes may exchange records representing irreversible work already performed.
 These records:
@@ -218,7 +218,7 @@ These records:
 - Do not bypass local constraints
 They function solely as a coordination and accounting mechanism.
 
-## Failure and Constraint Propagation
+### Failure and Constraint Propagation
 
 If any domain reaches its limit:
 - Excess input is curtailed or dissipated
@@ -226,7 +226,7 @@ If any domain reaches its limit:
 - No compensatory abstraction is introduced
 - Constraint propagation is visible and immediate.
 
-## System Properties
+### System Properties
 
 The system exhibits:
 - Physical honesty
@@ -235,12 +235,102 @@ The system exhibits:
 - Linear scalability
 There is no requirement for trust beyond measurement. The model does not assume rational behavior, efficiency, or fairness. It only enforces consistency with physical reality.
 
-## Summary
+### Summary
 
 The system model describes an economy as a continuous process of constrained allocation occurring across autonomous nodes.
 Energy flows in. Time advances. Decisions are made. History accumulates.
 Nothing more is assumed.
 
+## Dashboard and Interface Philosophy
+
+The dashboard is not a control panel in the traditional sense. It is an instrument.An integral part of the system. Its purpose is to make constraints visible, allocation explicit, and irreversibility legible over time.
+
+The interface does not simulate the system. It is the system’s public surface.
+
+### Design Principles
+
+1. Measurement First, Control Second
+   
+Every visible element corresponds to a measurable physical quantity or a declared allocation decision.
+
+No value is displayed unless it can be measured directly by sensors, or derived deterministically from measured inputs.
+
+There are no abstract indicators, scores, or inferred “health” metrics.
+
+2. Allocation Is the Central Act
+   
+The interface exists to answer one question:
+
+Where is the next unit of input going?
+
+Allocation is always forward-looking. The UI never edits the past.
+
+Manual control is expressed only as allocation targets, allocation limits and allocation timing. If an allocation cannot be executed due to constraint, it is rejected visibly.
+
+3. Constraint Visibility Over Optimization
+   
+The dashboard does not attempt to optimize outcomes.
+
+Instead, it exposes capacity limits, saturation points, loss and decay and curtailment events. Constraint is not an error state — it is normal operation.
+
+4. No Illusion of Perpetual Motion
+
+The interface avoids circular metaphors that imply self-sustaining loops.
+Flows are directional. Time progresses. States change irreversibly.
+The absence of arrows is intentional.
+
+### Interface States
+
+Default State — View: Displays current node state. No controls visible.
+The word ALLOCATE appears in a white rectangular background.
+This is the system at rest.
+
+Active State — Configured: Allocation parameters are defined.
+The word ALLOCATE appears in a green rectangular background.
+Indicates all domains are within measurable and executable bounds.
+Green means consistent with physics, not “good”.
+
+Constraint State — Out of Parameter: one or more domains exceed capacity or violate timing constraints.
+The word ALLOCATE background turns red and letters pulse slowly to indicate unresolved tension.
+Red means allocation intent cannot be satisfied.
+
+### Time as the Primary Axis
+
+Time is represented as a rotating ring:
+24 hours divided into 10-minute intervals. Each interval is allocatable.
+Current time is marked by a triangle at the top of the ring.
+Allocation applies only to future segments.
+Once time passes, the segment becomes immutable history.
+The rest of the dashboard exists inside this ring.
+
+### Domain Representation
+
+The four domains — Harvest, Store, Consume, Transform — appear as distinct regions with:
+Current capacity
+Current utilization
+Allocated share (%)
+Measured units (SI only)
+No totals are hidden. No averages are smoothed.
+
+### Minimal Interaction Modes
+
+Bottom task bar:
+- **V** View (read-only)
+- **A** Allocate (manual allocation input)
+- **S** Settings (system parameters)
+
+Allocation sliders snap to discrete 10-minute intervals and are bounded by physical limits.
+
+### What the UI Refuses to Do
+Predict prices
+Forecast demand
+Rank outcomes
+Conceal loss
+Abstract away time
+
+The UI is intentionally austere.
+
+If the user feels discomfort, it is because constraint is visible.
 
 
 Links:
