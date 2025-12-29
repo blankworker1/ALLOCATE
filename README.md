@@ -16,7 +16,9 @@ At the same time, renewable energy systems - solar in particular - have become l
 
 ALLOCATE is motivated by a simple question:
 
+---
 What would economic coordination look like if allocation decisions were visibly constrained by physics instead of abstract accounting?
+---
 
 ## Core Idea
 
@@ -185,9 +187,13 @@ These domains are distinct but interdependent. All operate under physical limits
 ### Flow Characteristics
 
 Inputs enter only through Harvest
+
 Outputs leave only through Consume or Transform
+
 Store mediates between inflow and use but does not eliminate loss
+
 No domain is cyclically self-sustaining
+
 There is no assumption of balance, equilibrium, or continuity of supply.
 
 ### Allocation Domain
