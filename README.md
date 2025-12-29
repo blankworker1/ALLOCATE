@@ -27,7 +27,7 @@ abstract accounting?
 
 All economic activity is an allocation problem.
 
-Scarce inputs—energy, time, materials, attention—must be assigned among competing uses. Whether explicit or implicit, every decision allocates something now, later, or never.
+Scarce inputs - energy, time, materials, attention - must be assigned among competing uses. Whether explicit or implicit, every decision allocates something now, later, or never.
 
 ALLOCATE makes this process explicit.
 
@@ -61,7 +61,7 @@ The axioms that follow translate these truths into enforceable constraints for e
 
 All economic activity is constrained by irreversible physical inputs.
 
-Production requires inputs—energy, time, materials, or attention—that cannot be recovered without additional expenditure. Economic scarcity originates in physical reality, not policy, preference, or accounting.
+Production requires inputs - energy, time, materials, or attention - that cannot be recovered without additional expenditure. Economic scarcity originates in physical reality, not policy, preference, or accounting.
 
 ### Axiom 2 — One-Way Entry
 
@@ -73,7 +73,7 @@ Energy, time, and materials arrive once. They may be converted, stored imperfect
 
 Scarce inputs must be allocated among competing uses.
 
-Every unit of input is assigned—explicitly or implicitly—to immediate use, delayed use, transformation, or loss. Non-allocation is itself an allocation decision.
+Every unit of input is assigned - explicitly or implicitly - to immediate use, delayed use, transformation, or loss. Non-allocation is itself an allocation decision.
 
 ### Axiom 4 — Time Irreversibility
 
