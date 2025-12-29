@@ -165,7 +165,7 @@ Batteries instead of ponds.
 
 Food stores instead of granaries.
 
-And one more thing - machine that can turn extra energy into digital proof of work.
+And one more thing - a machine that can turn extra energy into digital proof of work.
 
 When energy is abundant the village runs machines, charges batteries, grows food or transforms surplus energy into something that can travel.
 
@@ -188,9 +188,14 @@ People still want different things.
 People still make mistakes.
 
 
-Every day, whether we notice it or not, we allocate. 
-We allocate our time, our attention, our energy, and our effort. 
-Most of the world’s problems are not caused by a lack of resources, but by poor, hidden, or misunderstood allocation. 
-This story is an invitation to look more clearly at those choices — in your home, your work, your community. 
-You don’t need permission. You don’t need to agree. You only need to notice what comes in, what is constrained, and what you choose to do with it. 
+Every day, whether we notice it or not, we allocate.
+
+We allocate our time, our attention, our energy, and our effort.
+
+Most of the world’s problems are not caused by a lack of resources, but by poor, hidden, or misunderstood allocation.
+
+This story is an invitation to look more clearly at those choices — in your home, your work, your community.
+
+You don’t need permission. You don’t need to agree. You only need to notice what comes in, what is constrained, and what you choose to do with it.
+
 The sun will rise tomorrow. Energy will arrive. Time will move forward. What happens next is up to you.
