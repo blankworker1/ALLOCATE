@@ -31,7 +31,9 @@ Scarce inputs—energy, time, materials, attention—must be assigned among comp
 
 ALLOCATE makes this process explicit.
 
-By grounding economic activity in measurable inputs and enforcing irreversibility at the interface level, the system replaces hidden abstraction with observable trade-offs. Allocation decisions are expressed intentionally, constrained by reality, and recorded as they unfold in time.
+By grounding economic activity in measurable inputs and enforcing irreversibility at the interface level, the system replaces hidden abstraction with observable trade-offs. 
+
+Allocation decisions are expressed intentionally, constrained by reality, and recorded as they unfold in time.
 
 The result is not a new market or ideology, but a clearer view of what is already happening.
 
