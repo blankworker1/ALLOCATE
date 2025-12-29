@@ -281,16 +281,16 @@ The absence of arrows is intentional.
 
 ### Interface States
 
-Default State — View: Displays current node state. No controls visible.
+**Default State** - View: Displays current node state. No controls visible.
 The word ALLOCATE appears in a white rectangular background.
 This is the system at rest.
 
-Active State — Configured: Allocation parameters are defined.
+**Active State** - Configured: Allocation parameters are defined.
 The word ALLOCATE appears in a green rectangular background.
 Indicates all domains are within measurable and executable bounds.
 Green means consistent with physics, not “good”.
 
-Constraint State — Out of Parameter: one or more domains exceed capacity or violate timing constraints.
+**Constraint State** - Out of Parameter: one or more domains exceed capacity or violate timing constraints.
 The word ALLOCATE background turns red and letters pulse slowly to indicate unresolved tension.
 Red means allocation intent cannot be satisfied.
 
@@ -306,10 +306,15 @@ The rest of the dashboard exists inside this ring.
 ### Domain Representation
 
 The four domains — Harvest, Store, Consume, Transform — appear as distinct regions with:
+
 Current capacity
+
 Current utilization
+
 Allocated share (%)
-Measured units (SI only)
+
+Measured parameters (SI units only)
+
 No totals are hidden. No averages are smoothed.
 
 ### Minimal Interaction Modes
@@ -322,10 +327,15 @@ Bottom task bar:
 Allocation sliders snap to discrete 10-minute intervals and are bounded by physical limits.
 
 ### What the UI Refuses to Do
+
 Predict prices
+
 Forecast demand
+
 Rank outcomes
+
 Conceal loss
+
 Abstract away time
 
 The UI is intentionally austere.
