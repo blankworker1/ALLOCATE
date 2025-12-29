@@ -80,6 +80,43 @@ Valid economic claims must be consistent with physical constraints.
 
 Records of value, ownership, or exchange cannot exceed the limits imposed by irreversible inputs and time. Monetary systems that permit claims detached from these constraints introduce distortion, instability, and false signals.
 
+## What ALLOCATE is
+
+ALLOCATE is a framework for observing and expressing allocation decisions under physical constraints.
+
+It provides a:
+- vocabulary for describing economic activity in terms of energy, time, and irreversible work
+- measurement-first approach where inputs and limits are visible before decisions are made
+- interfaces that enforce irreversibility and constraint at the point of allocation
+- reference model for building hardware, software, and economic experiments that cannot violate physics
+
+ALLOCATE treats allocation as a continuous process rather than a one-time choice. It makes explicit what is normally implicit: that scarcity exists, trade-offs are unavoidable, and time advances regardless of intention.
+
+## What ALLOCATE is not
+
+ALLOCATE is not a:
+- currency, token, or payment network
+- replacement for markets, prices, or voluntary exchange
+- claim that energy determines value or utility
+- system that guarantees fairness, equality, or optimal outcomes
+- solution to political or social disagreement
+- 
+ALLOCATE does not prescribe what should be produced, consumed, or valued. It does not rank human needs or define priorities. It only constrains what can be claimed, allocated, or recorded to what is physically possible.
+
+If an implementation allows economic claims to exceed measurable inputs or time, it is not ALLOCATE.
+
+## Allocation Economics
+
+Allocation Economics is the study of how economic coordination emerges when allocation decisions are made explicit and constrained by irreversible inputs.
+
+In this model, production is not the starting point. Allocation is. Energy, time, and materials enter the system as one-way inflows. They must be assigned among immediate use, delayed use, transformation, or loss. Once assigned, alternative possibilities collapse.
+
+Value is not derived from energy itself, but from human preference acting within these constraints. Prices, exchange, and markets remain mechanisms for coordinating subjective value, but they operate downstream of physically honest cost.
+
+Allocation Economics does not eliminate abstraction; it limits it. Accounting systems may summarize, store, or transfer claims, but they cannot exceed the irreversible work already performed.
+
+The purpose of Allocation Economics is not to optimize outcomes, but to make trade-offs visible, auditable, and unavoidable.
+
 
 
 
