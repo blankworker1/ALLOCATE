@@ -1,7 +1,50 @@
 # ALLOCATE
 
-ALLOCATE is an open research and engineering project exploring how economic systems change when allocation is constrained by physics instead of policy.
-The project treats energy, time, and irreversible work as first-class economic primitives. Measurement precedes control. Allocation replaces abstraction.
+## Overview
+
+ALLOCATE is an open research and engineering project exploring how economic systems behave when allocation is constrained by physical reality rather than monetary abstraction.
+
+The project treats energy, time, and irreversible work as first-class economic primitives. It focuses on measurement before control and allocation before optimization, using simple hardware, transparent data, and minimal interfaces to make economic activity observable and auditable.
+
+ALLOCATE is not a currency, a protocol, or a market. It is a framework for understanding and designing systems where economic claims cannot exceed physical constraints.
+
+## Motivation
+
+Modern economic systems are highly effective at coordination, but fragile at their foundations. Monetary instruments routinely create claims on future production without binding those claims to measurable, irreversible inputs. This disconnect obscures cost, distorts signals, and shifts economic debate from reality to policy.
+
+At the same time, renewable energy systems - solar in particular - have become locally measurable, widely accessible, and physically transparent. We now possess the tools to observe production constraints directly, in real time, using globally agreed units.
+
+ALLOCATE is motivated by a simple question:
+
+What would economic coordination look like if allocation decisions were visibly constrained by physics instead of abstract accounting?
+
+## Core Idea
+
+All economic activity is an allocation problem.
+
+Scarce inputs—energy, time, materials, attention—must be assigned among competing uses. Whether explicit or implicit, every decision allocates something now, later, or never.
+
+ALLOCATE makes this process explicit.
+
+By grounding economic activity in measurable inputs and enforcing irreversibility at the interface level, the system replaces hidden abstraction with observable trade-offs. Allocation decisions are expressed intentionally, constrained by reality, and recorded as they unfold in time.
+
+The result is not a new market or ideology, but a clearer view of what is already happening.
+
+## First Principles
+
+ALLOCATE rests on a small set of physical truths that apply regardless of culture, policy, or preference:
+
+**Energy is conserved**
+**It cannot be created, only converted or dissipated**
+**Entropy increases**
+**Useful energy degrades with use, storage, and time**
+**Time is irreversible**
+
+Decisions move forward; past allocations cannot be undone without additional cost. Measurement precedes control. You cannot allocate what you have not measured.
+
+These principles are not economic opinions. They are properties of the physical world.
+
+The axioms that follow translate these truths into enforceable constraints for economic systems.
 
 ## The Five Core Axioms of Allocation Economics
 
