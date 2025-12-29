@@ -269,7 +269,11 @@ The system model describes an economy as a continuous process of constrained all
 Energy flows in. Time advances. Decisions are made. History accumulates.
 Nothing more is assumed.
 
-(dashboard image)
+
+
+
+
+![Dashboard](https://emerald-real-clownfish-172.mypinata.cloud/ipfs/bafkreihfojw2nnntgyavxuj3rtpnpjsvidahf72spt23qr3s4ghxmclrgu)
 
 ## Dashboard and Interface Philosophy
 
