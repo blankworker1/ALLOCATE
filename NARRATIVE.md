@@ -71,7 +71,7 @@ When you use water, it’s gone. You can’t un-drink it. You can’t un-turn th
 
 This is consumption.
 
-Energy works the same way.mOnce it’s used, it’s history.
+Energy works the same way. Once it’s used, it’s history.
 
 
 ### 4. Transform
