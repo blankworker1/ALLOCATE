@@ -187,6 +187,29 @@ People still want different things.
 
 People still make mistakes.
 
+## What It Does Do
+
+It makes lying harder.
+
+You cannot claim work without doing work. You cannot promise energy you don’t have. You cannot pretend time flows backward.
+
+The sun rises. Energy arrives. Choices are made. History is written.
+
+## The Big Idea
+
+The economy is not a machine that runs forever. It is a process of allocation under constraint.
+
+Energy comes in. Time moves forward. Work happens once.
+
+Everything else is bookkeeping.
+
+## And That’s the Whole Story
+
+No equations. No ideology. No miracles.
+
+Just sunlight, time, and choice.
+
+## Epilogue 
 
 Every day, whether we notice it or not, we allocate.
 
