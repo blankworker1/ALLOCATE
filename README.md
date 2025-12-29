@@ -36,7 +36,7 @@ ALLOCATE rests on a small set of physical truths that apply regardless of cultur
 
 **Energy is conserved**
 
-**It cannot be created, only converted or dissipated**
+**Energy cannot be created - only converted or dissipated**
 
 **Entropy increases**
 
