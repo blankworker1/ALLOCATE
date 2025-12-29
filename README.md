@@ -35,9 +35,13 @@ The result is not a new market or ideology, but a clearer view of what is alread
 ALLOCATE rests on a small set of physical truths that apply regardless of culture, policy, or preference:
 
 **Energy is conserved**
+
 **It cannot be created, only converted or dissipated**
+
 **Entropy increases**
+
 **Useful energy degrades with use, storage, and time**
+
 **Time is irreversible**
 
 Decisions move forward; past allocations cannot be undone without additional cost. Measurement precedes control. You cannot allocate what you have not measured.
