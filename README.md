@@ -100,8 +100,9 @@ ALLOCATE is not a:
 - claim that energy determines value or utility
 - system that guarantees fairness, equality, or optimal outcomes
 - solution to political or social disagreement
-- 
-ALLOCATE does not prescribe what should be produced, consumed, or valued. It does not rank human needs or define priorities. It only constrains what can be claimed, allocated, or recorded to what is physically possible.
+
+ALLOCATE does not prescribe what should be produced, consumed, or valued. 
+It does not rank human needs or define priorities. It only constrains what can be claimed, allocated, or recorded to what is physically possible.
 
 If an implementation allows economic claims to exceed measurable inputs or time, it is not ALLOCATE.
 
