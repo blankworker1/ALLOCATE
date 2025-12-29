@@ -118,6 +118,50 @@ Allocation Economics does not eliminate abstraction; it limits it. Accounting sy
 
 The purpose of Allocation Economics is not to optimize outcomes, but to make trade-offs visible, auditable, and unavoidable.
 
+## Measurement and Constraints
+
+Allocation requires measurement.
+
+ALLOCATE treats measurement as a prerequisite for economic action, not a byproduct of accounting. Only quantities that can be observed, measured, or reliably derived may be allocated or claimed.
+
+Measurements are expressed in globally agreed physical units:
+- Energy (watts, watt-hours, joules)
+- Time (seconds)
+- Power (energy per unit time)
+- Stored capacity (bounded, lossy)
+- Irreversible work (observable through transformation)
+
+Measurement is imperfect. Sensors fail. Storage degrades. Losses occur. These limitations are not errors in the model; they are part of the constraint set. Uncertainty, decay, and latency introduce time preference and natural friction into allocation decisions.
+
+Constraints arise from:
+- Finite energy inflows
+- Bounded storage capacity and efficiency
+- Maximum conversion rates
+- Irreversible time progression
+
+ALLOCATE does not attempt to smooth, average, or abstract away these constraints. They are surfaced directly. If an allocation cannot be satisfied given current measurements and limits, it is rejected or deferred.
+Measurement does not determine value. It defines feasibility.
+
+## The Allocation Loop
+
+The Allocation Loop describes the continuous process by which economic activity unfolds under constraint.
+**Measure**
+Current state is observed: available energy, stored capacity, active loads, time position.
+**Constrain**
+Physical limits are applied: inflow bounds, storage limits, rate caps, and time progression.
+**Allocate**
+Inputs are assigned among competing uses for a discrete time interval. Allocation may be manual, automated, or assisted, but it must conform to constraints.
+**Execute**
+Allocation decisions are enacted. Energy is consumed, stored, transformed, or dissipated.
+**Record**
+Outcomes are observed and logged. Allocations become history. Unused inputs are lost.
+**Advance Time**
+The system moves forward. Past allocations cannot be revised.
+
+This loop repeats continuously. There is no reset, rewind, or equilibrium state. Stability, when it occurs, is temporary and contingent.
+
+The purpose of the Allocation Loop is not optimization, but honesty. It ensures that economic activity progresses in a way that is observable, constrained, and accountable to reality.
+
 
 
 
