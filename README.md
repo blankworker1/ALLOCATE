@@ -302,13 +302,12 @@ The word ALLOCATE appears in a white rectangular background.
 This is the system at rest.
 
 **Active State** - Configured: Allocation parameters are defined.
-The word ALLOCATING appears in a green rectangular background.
-Indicates all domains are within measurable and executable bounds.
-Green means consistent with physics, not “good”.
+The word ALLOCATING appears in a green rectangular background which indicates all domains are within measurable and executable bounds.
+Green - consistent with physics (not “good").
 
 **Constraint State** - Out of Parameter: one or more domains exceed capacity or violate timing constraints.
 The rectangular background turns red and the ALLOCATING letters pulse slowly to indicate unresolved tension.
-Red means allocation intent cannot be satisfied.
+Red - allocation intent cannot be satisfied.
 
 ### Time as the Primary Axis
 
