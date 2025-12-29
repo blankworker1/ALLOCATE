@@ -138,7 +138,9 @@ Measurements are expressed in globally agreed physical units:
 - Stored capacity (bounded, lossy)
 - Irreversible work (observable through transformation)
 
-Measurement is imperfect. Sensors fail. Storage degrades. Losses occur. These limitations are not errors in the model; they are part of the constraint set. Uncertainty, decay, and latency introduce time preference and natural friction into allocation decisions.
+Measurement is imperfect. Sensors fail. Storage degrades. Losses occur. These limitations are not errors in the model; they are part of the constraint set.
+
+Uncertainty, decay, and latency introduce time preference and natural friction into allocation decisions.
 
 Constraints arise from:
 - Finite energy inflows
@@ -260,7 +262,7 @@ The interface does not simulate the system. It is the system’s public surface.
 
 ### Design Principles
 
-1. Measurement First, Control Second
+**1. Measurement First, Control Second**
    
 Every visible element corresponds to a measurable physical quantity or a declared allocation decision.
 
@@ -268,7 +270,7 @@ No value is displayed unless it can be measured directly by sensors, or derived 
 
 There are no abstract indicators, scores, or inferred “health” metrics.
 
-2. Allocation Is the Central Act
+**2. Allocation Is the Central Act**
    
 The interface exists to answer one question:
 
@@ -278,13 +280,13 @@ Allocation is always forward-looking. The UI never edits the past.
 
 Manual control is expressed only as allocation targets, allocation limits and allocation timing. If an allocation cannot be executed due to constraint, it is rejected visibly.
 
-3. Constraint Visibility Over Optimization
+**3. Constraint Visibility Over Optimization**
    
 The dashboard does not attempt to optimize outcomes.
 
 Instead, it exposes capacity limits, saturation points, loss and decay and curtailment events. Constraint is not an error state — it is normal operation.
 
-4. No Illusion of Perpetual Motion
+**4. No Illusion of Perpetual Motion**
 
 The interface avoids circular metaphors that imply self-sustaining loops.
 Flows are directional. Time progresses. States change irreversibly.
