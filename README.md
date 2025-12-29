@@ -377,9 +377,9 @@ It is designed to prove:
 
 **Energy Harvest**
 
-Primary PV Array: 2 kW trailer-mounted solar
+Primary PV Array: 2 kW trailer-mounted installation 
 
-Secondary PV Array: 1 kW auxiliary array
+Secondary PV Array: 1 kW auxiliary installation 
 
 Independent MPPT controllers. Secondary array switchable via breaker.
 
