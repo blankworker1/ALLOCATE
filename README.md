@@ -3,6 +3,7 @@
 ## Table of Contents
 
 - [Overview](#overview)
+- [Summary](#summary)
 - [Motivation](#motivation)
 - [Core Idea](#core-idea)
 - [First Principles](#first-principles)
@@ -22,6 +23,10 @@ ALLOCATE is an open research and engineering project exploring how economic syst
 The project treats energy, time, and irreversible work as first-class economic primitives. It focuses on measurement before control and allocation before optimization, using simple hardware, transparent data, and minimal interfaces to make economic activity observable and auditable.
 
 ALLOCATE is not a currency, a protocol, or a market. It is a framework for understanding and designing systems where economic claims cannot exceed physical constraints.
+
+## Summary
+
+ALLOCATE demonstrates a physically grounded economic model where energy, time, and irreversible work are measured, constrained, and allocated. The system separates local energy management from global coordination via Bitcoin as a durable, transferable record of opportunity cost. Allocation, not pricing, is the central act: each input is assigned to Harvest, Store, Consume, or Transform, fully respecting physical limits and time progression. The project includes a minimal real-world node for demonstration, a dashboard for continuous measurement and decision-making, and a scalable framework applicable from individual households to communities.
 
 ## Motivation
 
