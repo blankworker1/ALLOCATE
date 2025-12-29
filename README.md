@@ -1,5 +1,20 @@
 # ALLOCATE
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Motivation](#motivation)
+- [Core Idea](#core-idea)
+- [First Principles](#first-principles)
+- [The Five Core Axioms](#the-five-core-axioms-of-allocation-economics)
+- [What ALLOCATE Is / Is Not](#what-allocate-is--is-not)
+- [Allocation Economics](#allocation-economics)
+- [Measurement and Constraints](#measurement-and-constraints)
+- [The Allocation Loop](#the-allocation-loop)
+- [System Model](#system-model)
+- [Dashboard and Interface Philosophy](#dashboard-and-interface-philosophy)
+- [Demonstration Node (D-NODE)](#demonstration-node-d-node)
+
 ## Overview
 
 ALLOCATE is an open research and engineering project exploring how economic systems behave when allocation is constrained by physical reality rather than monetary abstraction.
@@ -253,6 +268,8 @@ There is no requirement for trust beyond measurement. The model does not assume 
 The system model describes an economy as a continuous process of constrained allocation occurring across autonomous nodes.
 Energy flows in. Time advances. Decisions are made. History accumulates.
 Nothing more is assumed.
+
+(dashboard image)
 
 ## Dashboard and Interface Philosophy
 
