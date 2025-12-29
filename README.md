@@ -38,8 +38,6 @@ ALLOCATE rests on a small set of physical truths that apply regardless of cultur
 
 **Energy cannot be created - only converted or dissipated**
 
-**Entropy increases**
-
 **Useful energy degrades with use, storage, and time**
 
 **Time is irreversible**
