@@ -17,8 +17,9 @@ At the same time, renewable energy systems - solar in particular - have become l
 ALLOCATE is motivated by a simple question:
 
 ```
-What would economic coordination look like if allocation decisions
-were visibly constrained by physics instead of abstract accounting?
+What would economic coordination look like if allocation
+decisions were visibly constrained by physics instead of
+abstract accounting?
 
 ```
 
