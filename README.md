@@ -367,72 +367,94 @@ The D-NODE is a physically complete, mobile, auditable instance of Allocation Ec
 
 It is designed to prove:
 
-Allocation, not pricing, is the core economic act
+- Allocation, not pricing, is the core economic act
 
-Bitcoin mining absorbs surplus without distortion
+- Bitcoin mining absorbs surplus without distortion
 
-Curtailment is a choice, not a necessity
+- Curtailment is a choice, not a necessity
 
 ### Physical Configuration
 
 **Energy Harvest**
 
 Primary PV Array: 2 kW trailer-mounted solar
+
 Secondary PV Array: 1 kW auxiliary array
-Independent MPPT controllers
-Secondary array switchable via breaker.
+
+Independent MPPT controllers. Secondary array switchable via breaker.
+
 Purpose: To demonstrate variable power generation inflow and simulate excess generation conditions.
 
 **Energy Storage**
 
 Battery bank (chemistry agnostic)
-Known capacity and round-trip efficiency
-SOC measured continuously
+
+Known capacity and round-trip efficiency. State of Charge (SOC) measured continuously.
+
 Purpose: To show bounded, lossy storage and visualize saturation and decay.
 
 **Energy Consume**
 
-Controllable Load (resistive or programmable)
-Minimum survival / priority / baseline consumption
-Manually adjustable demand
+Controllable Load (resistive / programmable)
+
+Minimum survival / priority / baseline energy consumption. Manually adjustable demand.
+
 Purpose: To represent essential / discretionary energy use and trade-offs.
 
 **Energy Transform** 
 
 Bitcoin ASIC Mining Computers
+
 Primary Miner: Always available
+
 Secondary Miner: Activated by surplus conditions
-Power draw known and fixed per unit, can be run as a variable load
+
+Power draw known and fixed per unit, can be run as a variable load.
+
 Purpose:To absorb excess energy, convert surplus energy into transferable proof-of-work receipts and demonstrate an “infinite sink” solution without grid reliance.
 
 **Grid Interface**
 
 Simulator for grid-tie / curtailment logic
+
 Purpose:To show traditional curtailment response, energy use inefficiency and economic loss via forced shutdown. Grid connection is not a dependency.
 
 ## Measured Quantities
 
 ### Harvest
+
 Instantaneous power (W)
+
 Cumulative energy (Wh)
 
 ### Store
+
 State of charge (%)
+
 Energy in/out (Wh)
+
 Loss over time
 
 ### Consume
+
 Load draw (W)
+
 Energy used (Wh)
 
 ### Transform
+
 Miner power (W)
+
 Hash rate
+
 Bitcoin output (sats)
 
 ### Allocation
+
 Allocation split (%)
+
 Allocation timeline
+
 Curtailment events
 
 ## Demonstration Scenarios
