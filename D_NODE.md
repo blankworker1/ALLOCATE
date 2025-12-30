@@ -164,13 +164,13 @@ scarcity is not eliminated by overbuilding supply, but by allocating demand inte
 
 Flexible loads are the final layer of the allocation stack. They exist to absorb energy that would otherwise be wasted once all higher-priority needs are met.
 
-In the D-NODE, this role is fulfilled by an ASIC mining load—not because it is unique, but because it is functionally ideal.
+In the D-NODE model, this role is fulfilled by an ASIC mining load - not because it is unique, but because it is functionally ideal.
 
 ---
 
 ## Why ASICs Are the Perfect Flexible Load
 
-ASICs have a rare combination of properties that make them exceptionally well-suited for this role:
+ASIC computers have a rare combination of properties that make them exceptionally well-suited for this role:
 
 **Fully dispatchable**
 They can be turned on, off, or throttled instantly without damage or efficiency loss.
@@ -191,7 +191,7 @@ In allocation terms, ASICs have zero entitlement. They consume only what remains
 
 ## Dual Outputs: Heat and Bitcoin
 
-Unlike most surplus sinks, ASICs produce two outputs—both of which add value.
+Unlike most surplus load sinks ASICs produce two outputs, both of which add value.
 
 ### 1. Heat (Immediate, Local)
 
@@ -202,7 +202,6 @@ All electrical energy consumed by an ASIC is converted into heat. In real deploy
 - Used for water heating or drying
 
 - Integrated into agricultural or industrial processes
-
 
 Even in the demo, the heat serves as a visible reminder that no energy disappears, it only changes form.
 
