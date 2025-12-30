@@ -8,6 +8,8 @@ Minimum Hardware Requirements based on:
 
 - monitoring, control and display via Home Assistant
 
+---
+
 ### 1. PV Generation
 
 PV panels
