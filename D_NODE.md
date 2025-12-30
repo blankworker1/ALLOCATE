@@ -213,7 +213,7 @@ Bitcoin exists only to answer one question:
 
 ## Flexible Loads as a Design Principle
 
-ASICs are one example of a flexible load—not the only one. The same role could be filled by:
+ASIC computers mining Bitcoin are not the only example of a flexible load. The same role could be filled by:
 
 - Data processing
 
