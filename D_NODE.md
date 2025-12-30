@@ -31,10 +31,6 @@ What happens at this scale is not a special case — it is the same allocation p
 
 The D-NODE simply makes the choices explicit.
 
-
-Here is a clear, non-technical, structurally tight explanation of the Load Classes, suitable to drop directly after the introduction in D_NODE.md. It keeps the focus on allocation logic, not hardware minutiae.
-
-
 ---
 
 ## Load Classes
