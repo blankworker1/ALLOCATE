@@ -30,3 +30,79 @@ Its purpose is clarity. By exposing energy flows, time dependence, and priority 
 What happens at this scale is not a special case — it is the same allocation problem faced by households, farms, factories, and entire economies. 
 
 The D-NODE simply makes the choices explicit.
+
+
+Here is a clear, non-technical, structurally tight explanation of the Load Classes, suitable to drop directly after the introduction in D_NODE.md. It keeps the focus on allocation logic, not hardware minutiae.
+
+
+---
+
+## Load Classes
+
+The D-NODE organizes all energy use into three distinct load classes. These classes are not defined by technology, but by priority, flexibility, and time sensitivity. Every unit of energy entering the node must flow into one of these classes or be stored for later use. The separation makes allocation decisions explicit and auditable.
+
+### 1. Domestic Load — Reliability-Critical
+
+Domestic load represents essential, time-dependent energy use that cannot be deferred without loss of welfare. In the demo node, this load models basic household needs such as lighting and background appliance use. These loads exist regardless of solar conditions and are poorly aligned with peak generation.
+
+Domestic load has the highest priority in the system. It must always be served first. If insufficient energy is available, the system has failed its primary responsibility. This load therefore defines the minimum reliability requirement of the microgrid and sets a hard lower bound on allocation decisions.
+
+Domestic energy is not optimized. It is protected.
+
+
+---
+
+### 2. Industrial Load — Productive and Schedulable
+
+Industrial load represents energy used for productive work that can be shifted in time. In the demo, this includes on-farm processing and a small lunch-only restaurant, forming a closed-loop example of agricultural production and consumption.
+
+Unlike domestic load, industrial processes can be planned to coincide with solar availability. Milling, mixing, extrusion, drying, and food service are intentionally scheduled around midday when solar output is highest. This load converts energy into durable economic value rather than immediate consumption.
+
+Industrial load demonstrates that when production adapts to energy, overall system efficiency and resilience increase without additional infrastructure.
+
+
+---
+
+### 3. Flexible Load — Surplus Absorber
+
+The flexible load represents fully controllable, non-essential consumption that exists to absorb excess energy when all higher-priority needs are met. In the demo node, this role is fulfilled by an ASIC mining load, but the function is generic and interchangeable.
+
+This load has the lowest priority and is only engaged when:
+
+- Domestic load is fully supplied
+
+- Industrial load is running as scheduled
+
+- Storage is charging or full
+
+
+The flexible load can be switched, stepped, or throttled in real time to match available surplus. Its purpose is not to drive the system, but to prevent curtailment and wasted generation.
+
+---
+
+## Load Priority and Allocation Logic
+
+The three load classes form a simple hierarchy:
+
+1. Domestic — must always be served
+
+
+2. Industrial — served when energy is available
+
+
+3. Flexible — served only if energy would otherwise be unused
+
+
+This hierarchy allows the node to:
+
+- Remain stable under variable generation
+
+- Maximize renewable utilization
+
+- Demonstrate demand-side management without complexity
+
+
+The key insight is that flexibility, not storage alone, enables high renewable penetration. The D-NODE makes this visible in hardware.
+
+
+
