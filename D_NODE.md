@@ -104,7 +104,9 @@ The key insight is that flexibility, not storage alone, enables high renewable p
 
 ## System Overview
 
-This diagram (link) shows the architecture of the D-NODE off-grid solar microgrid demo, designed to illustrate how domestic, industrial, and flexible loads can be balanced using photovoltaic generation and demand-side control. 
+![Diagram](https://emerald-real-clownfish-172.mypinata.cloud/ipfs/bafybeig7dgfziyhsgznc4vk5uxi4qubp7k37asjl23irjtza4kknd75ozy)
+
+This diagram shows the architecture of the D-NODE off-grid solar microgrid demo, designed to illustrate how domestic, industrial, and flexible loads can be balanced using photovoltaic generation and demand-side control. 
 
 Six PV panels feed a Victron MPPT, charging a 48 V LiFePO₄ battery and supplying AC loads via an inverter/charger, with clear separation between DC power flows and AC distribution.
 
