@@ -102,6 +102,20 @@ The key insight is that flexibility, not storage alone, enables high renewable p
 
 ---
 
+## System Overview
+
+This diagram (link) shows the architecture of the D-NODE off-grid solar microgrid demo, designed to illustrate how domestic, industrial, and flexible loads can be balanced using photovoltaic generation and demand-side control. 
+
+Six PV panels feed a Victron MPPT, charging a 48 V LiFePO₄ battery and supplying AC loads via an inverter/charger, with clear separation between DC power flows and AC distribution.
+
+Load control is managed by Home Assistant via Zigbee relays, using time-of-day scheduling and PV availability. 
+
+Domestic loads (priority 1) are always supplied, industrial loads for on-farm pasta production and a lunch-only restaurant (priority 2) are scheduled to align with midday solar generation, and a flexible ASIC load (priority 3) is enabled only when surplus PV energy is available to avoid curtailment. 
+
+The battery provides buffering for night and morning demand, while system status and energy flows are monitored through the Victron Cerbo GX.
+
+---
+
 ## Midday Balance Snapshot
 
 Midday is the most important teaching moment in the D-NODE because it reveals how allocation, not generation determines system performance.
@@ -229,5 +243,9 @@ What matters is not the technology, but the allocation behavior.
 The D-NODE shows that when flexible demand exists, renewable systems stop needing excuses for waste.
 
 They simply allocate.
+
+
+
+
 
 
