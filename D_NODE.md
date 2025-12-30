@@ -50,8 +50,6 @@ Domestic load has the highest priority in the system. It must always be served f
 Domestic energy is not optimized. It is protected.
 
 
----
-
 ### 2. Industrial Load — Productive and Schedulable
 
 Industrial load represents energy used for productive work that can be shifted in time. In the demo, this includes on-farm processing and a small lunch-only restaurant, forming a closed-loop example of agricultural production and consumption.
@@ -60,8 +58,6 @@ Unlike domestic load, industrial processes can be planned to coincide with solar
 
 Industrial load demonstrates that when production adapts to energy, overall system efficiency and resilience increase without additional infrastructure.
 
-
----
 
 ### 3. Flexible Load — Surplus Absorber
 
