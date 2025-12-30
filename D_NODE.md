@@ -84,13 +84,13 @@ The flexible load can be switched, stepped, or throttled in real time to match a
 
 The three load classes form a simple hierarchy:
 
-1. Domestic — must always be served
+1. **Domestic** - must always be served
 
 
-2. Industrial — served when energy is available
+2. **Industrial** - served when energy is available
 
 
-3. Flexible — served only if energy would otherwise be unused
+3. **Flexible** - served only if energy would otherwise be unused
 
 
 This hierarchy allows the node to:
@@ -104,5 +104,136 @@ This hierarchy allows the node to:
 
 The key insight is that flexibility, not storage alone, enables high renewable penetration. The D-NODE makes this visible in hardware.
 
+---
+
+## Midday Balance Snapshot
+
+Midday is the most important teaching moment in the D-NODE because it reveals how allocation, not generation determines system performance.
+
+At peak solar, the demo array produces approximately 2.4 kW. Rather than curtailing excess power or overcharging batteries, the node distributes this energy across all three load classes in priority order.
+
+## Energy Flows at Midday
+
+Load Class /	Power / Allocation Rationale
+
+Domestic	~0.24 kW	Always-on, reliability-critical demand
+
+Industrial	~1.0 kW	Scheduled production aligned with PV peak
+
+Flexible (ASIC)	~1.1–1.2 kW	Absorbs remaining surplus
+
+Total	≈ 2.4 kW	Full utilization of generation
+
+
+## What This Demonstrates
+
+**No curtailment**
+All available solar energy is used productively.
+
+**No battery stress**
+Batteries are neither forced to absorb excess power nor cycled unnecessarily.
+
+**Stable voltage and frequency**
+Load follows generation instead of fighting it.
+
+**Clear allocation logic**
+Energy is not “consumed” randomly, it is assigned deliberately.
+
+
+This snapshot makes visible a core principle of Allocation Economics:
+scarcity is not eliminated by overbuilding supply, but by allocating demand intelligently.
+
+
+---
+
+## Flexible Loads and Why They Matter
+
+Flexible loads are the final layer of the allocation stack. They exist to absorb energy that would otherwise be wasted once all higher-priority needs are met.
+
+In the D-NODE, this role is fulfilled by an ASIC mining load—not because it is unique, but because it is functionally ideal.
+
+---
+
+## Why ASICs Are the Perfect Flexible Load
+
+ASICs have a rare combination of properties that make them exceptionally well-suited for this role:
+
+**Fully dispatchable**
+They can be turned on, off, or throttled instantly without damage or efficiency loss.
+
+**Location-independent**
+They require no proximity to users, markets, or infrastructure beyond power and connectivity.
+
+**Elastic consumption**
+They scale smoothly from watts to kilowatts, matching surplus precisely.
+
+**Non-essential by design**
+No harm occurs if they stop. This makes them safe to deprioritize.
+
+In allocation terms, ASICs have zero entitlement. They consume only what remains.
+
+
+---
+
+## Dual Outputs: Heat and Bitcoin
+
+Unlike most surplus sinks, ASICs produce two outputs—both of which add value.
+
+### 1. Heat (Immediate, Local)
+
+All electrical energy consumed by an ASIC is converted into heat. In real deployments, this heat can be:
+
+- Recovered for space heating
+
+- Used for water heating or drying
+
+- Integrated into agricultural or industrial processes
+
+
+Even in the demo, the heat serves as a visible reminder that no energy disappears, it only changes form.
+
+### 2. Bitcoin (Abstract, Durable)
+
+Bitcoin represents the opportunity value of surplus energy:
+
+- It is stored without decay
+
+- It is transferrable across time and geography
+
+- It requires no intermediary
+
+Importantly, Bitcoin is not required for the node to function.
+The microgrid operates perfectly without it.
+
+Bitcoin exists only to answer one question:
+
+```
+> What should we do with energy that would otherwise be wasted?
+
+```
+
+
+---
+
+## Flexible Loads as a Design Principle
+
+ASICs are one example of a flexible load—not the only one. The same role could be filled by:
+
+- Data processing
+
+- Desalination
+
+- Electrolysis
+
+- Cold storage
+
+- Material preprocessing
+
+
+What matters is not the technology, but the allocation behavior.
+
+The D-NODE shows that when flexible demand exists, renewable systems stop needing excuses for waste.
+
+They simply allocate.
 
 
