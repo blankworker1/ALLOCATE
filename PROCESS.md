@@ -1,21 +1,11 @@
 
 # D-NODE Process Overview
 
-
- **1. Domestic Loads (Educational)**
-
-Purpose: Illustrate household energy demand patterns in a rural microgrid.
-
-Representation: Zigbee-controlled light bulb clusters (6 homes × 6 bulbs each).
-
-Control: Time-based daily profile; not physically consuming significant energy.
-
-Function in system: Teaching, demonstration, visualizing priority 1 loads.
-
-< Note: not included in process diagram >
+This section details the energy-intensive, schedulable components of the D-NODE microgrid demo. Together, the industrial and flexible loads demonstrate how a microgrid can prioritize essential production while efficiently absorbing excess generation, minimizing energy curtailment, and integrating real-world farm operations with renewable energy.
 
 
-**2. Industrial Loads (Real-World Testing)**
+
+**1. Industrial Loads (Real-World Testing)**
 
 Purpose: On-farm pasta production and restaurant service.
 
@@ -27,7 +17,7 @@ Scheduling: Midday, aligned with PV peak for maximum solar utilization (priority
 
 Function in system: Demonstrates productive use of PV energy and the concept of scheduling and allocation of loads to match renewable generation.
 
-**3.Flexible Loads (Load Balancing)**
+**2.Flexible Loads (Load Balancing)**
 
 Purpose: Consume any PV surplus not used by domestic or industrial loads.
 
