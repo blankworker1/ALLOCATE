@@ -110,7 +110,9 @@ This diagram shows the architecture of the D-NODE off-grid solar microgrid demo,
 
 Six PV panels feed a Victron MPPT, charging a 48 V LiFePO₄ battery and supplying AC loads via an inverter/charger, with clear separation between DC power flows and AC distribution.
 
-Load control is managed by Home Assistant via Zigbee relays, using time-of-day scheduling and PV availability. 
+Load control for industrial and flexible loads are managed by Home Assistant via Zigbee relays, using time-of-day scheduling and PV availability.
+
+Note: Domestic loads are implemented as Zigbee-controlled lighting groups with a time-based daily profile to simulate realistic household energy consumption patterns (not shown on diagram).
 
 Domestic loads (priority 1) are always supplied, industrial loads for on-farm pasta production and a lunch-only restaurant (priority 2) are scheduled to align with midday solar generation, and a flexible ASIC load (priority 3) is enabled only when surplus PV energy is available to avoid curtailment. 
 
