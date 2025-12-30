@@ -1,4 +1,7 @@
 
+![Process_Diagram](https://emerald-real-clownfish-172.mypinata.cloud/ipfs/bafkreigkgmxldx525br7h5dkssnrlyefcee4xotvkmdyhwmqbd7gaeijvm)
+
+
 # D-NODE Process Overview
 
 This section details the energy-intensive, schedulable components of the D-NODE microgrid. Together with other inputs (water, farm grown vegetables, eggs and beer) they create a closed loop system.
