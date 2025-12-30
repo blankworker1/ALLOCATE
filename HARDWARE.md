@@ -81,7 +81,7 @@ Class-T or MEGA fuse (optional but recommended)
 
 ---
 
-## 3. Inverter / system backbone
+### 3. Inverter / system backbone
 
 Inverter–charger
 
