@@ -1,7 +1,7 @@
 
 # D-NODE Process Overview
 
-This section details the energy-intensive, schedulable components of the D-NODE microgrid demo. Together, the industrial and flexible loads demonstrate how a microgrid can prioritize essential production while efficiently absorbing excess generation, minimizing energy curtailment, and integrating real-world farm operations with renewable energy.
+This section details the energy-intensive, schedulable components of the D-NODE microgrid. Together with other inputs (water, farm grown vegetables, eggs and beer) they create a closed loop system.
 
 
 
@@ -26,6 +26,8 @@ Equipment: ASIC miners.
 Control: Enabled only when PV generation exceeds other load requirements (priority 3).
 
 Function in system: Prevents curtailment, demonstrates demand-side flexibility, and balances the system.
+
+The industrial and flexible loads demonstrate how a microgrid can prioritize essential production while efficiently absorbing excess generation, minimizing energy curtailment, and integrating real-world farm operations with renewable energy.
 
 ## System Design Highlights
 
