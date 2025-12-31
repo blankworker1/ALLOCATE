@@ -1,5 +1,5 @@
 
-# ALLOCATE CAPITAL
+# ALLOCATE Capital 
 
 A physical, transparent model for allocating capital across time.
 
