@@ -158,7 +158,7 @@ Fiat currency is selected as the allocation medium.
 A slider moves from zero upward — no minimum threshold.
 
 
-**3. Funded Capacity**
+**3. Fund Capacity**
 
 As capital is allocated, the dashboard reveals:
 
