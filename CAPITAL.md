@@ -85,22 +85,27 @@ Capital is treated as an input, not a claim.
 Allocate Capital is built on the same foundations as Allocation Economics:
 
 1. Capital is finite
+
 Every unit of capital represents foregone alternatives.
 
 
 2. Capital enters once
+   
 When converted into hardware, capital becomes sunk cost.
 
 
 3. Capital decays physically
+   
 Hardware degrades based on use, environment, and time - not accounting rules.
 
 
 4. Returns are emergent, not promised
+   
 Outputs depend on energy availability, allocation decisions, and real performance.
 
 
 5. Claims cannot exceed physics
+    
 No leverage, no rehypothecation, no future guarantees.
 
 
@@ -144,14 +149,17 @@ It enables participation.
 ## The Capital Allocation Flow
 
 **1. Select Currency**
+
 Fiat currency is selected as the allocation medium.
 
 
 **2. Allocate Capital**
+
 A slider moves from zero upward — no minimum threshold.
 
 
-**3. Capacity Appears**
+**3. Funded Capacity**
+
 As capital is allocated, the dashboard reveals:
 
 Number of PV panels funded
@@ -165,6 +173,7 @@ Node count deployed
 
 
 **4. Allocation Profile**
+
    
 A secondary slider allows preference setting:
 
