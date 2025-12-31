@@ -196,7 +196,7 @@ Capacity becomes real.
 
 ---
 
-**Dashboard Philosophy**
+## Dashboard Philosophy
 
 The Capital Dashboard mirrors the Energy Dashboard:
 
@@ -208,6 +208,7 @@ Minimalist
 
 Non-promissory
 
+--- 
 
 ## Visual Language
 
@@ -218,7 +219,6 @@ Each adjustment advances the ring clockwise
 No arrows, no implied perpetual motion
 
 Completion reveals measured Bitcoin output, not projected yield
-
 
 
 ---
@@ -265,6 +265,7 @@ It cannot be liquidated at will
 
 It cannot be marked up by accounting fiction
 
+---
 
 ## Hardware Decay Model
 
@@ -337,7 +338,6 @@ A dashboard design
 A funding philosophy
 
 A live experiment
-
 
 It will evolve only through measurement and use, not narrative persuasion.
 
