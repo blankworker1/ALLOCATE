@@ -4,8 +4,6 @@
 A simple guide that teaches children and adults how energy, time, and human choice combine to shape resilient communities through Allocation Economics.
 
 
-## Contents 
-
 ## Contents
 
 1. [Introduction A World of Choices](#introduction-a-world-of-choices)
