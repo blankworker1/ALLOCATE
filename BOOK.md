@@ -6,31 +6,21 @@ A simple guide that teaches children and adults how energy, time, and human choi
 
 ## Contents 
 
-Introduction - A World of Choices 
+## Contents
 
-Prologue 
+1. [Introduction A World of Choices](#introduction-a-world-of-choices)
+2. [Prologue](#prologue)
+3. [Chapter 1 The Story of Energy](#chapter-1-the-story-of-energy)  
+4. [Chapter 2 The Story of Allocation](#chapter-2-the-story-of-allocation)  
+5. [Chapter 3 The Story of Measurement](#chapter-3-the-story-of-measurement)  
+6. [Chapter 4 The Story of Surplus](#chapter-4-the-story-of-surplus) 
+7. [Chapter 5 Many Villages, No Kingdom](#chapter-5-many-villages-no-kingdom)
+8. [Chapter 6 The Story of Decay and Replacement](#chapter-6-the-story-of-decay-and-replacement)  
+9. [Chapter 7 The Story of Trust and Honesty](#chapter-7-the story-of-trust-and-honesty)  
+10. [Chapter 8 Technology as a Tool](#chapter-8-technology-as-a-tool)  
+11. [Chapter 9 Becoming an Allocator](#chapter-9-becoming-an-allocator)  
+12. [Conclusion](#conclusion) 
 
-Chapter 1 - The Story of Energy 
-
-Chapter 2 - The Story of Allocation 
-
-Chapter 3
-
-Chapter 4
-
-Chapter 5
-
-Chapter 6
-
-Chapter 7
-
-Chapter 8
-
-Chapter 9
-
-Chapter 10
-
-Conclusion 
 
 
 
@@ -2098,7 +2088,7 @@ That is enough.
 
 ---
 
-## Chapter 8 - Technology as a Tool, Not a Goal
+## Chapter 8 - Technology as a Tool
 
 Villages had many machines.
 
