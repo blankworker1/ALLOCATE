@@ -165,13 +165,13 @@ Someone had to give up bread to feed the builders.
 
 Someone had to give up wood to build the wheel.
 
-Someone had to give up time.
+Someone had to give up time to make it happen.
 
 When they did, the saved effort disappeared and the mill appeared.
 
 Capital was gone.
 
-A mill existed instead.
+And the mill existed instead.
 
 
 ---
