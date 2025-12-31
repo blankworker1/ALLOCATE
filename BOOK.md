@@ -16,7 +16,7 @@ A simple guide that teaches children and adults how energy, time, and human choi
 6. [Chapter 4 The Story of Surplus](#chapter-4-the-story-of-surplus) 
 7. [Chapter 5 Many Villages, No Kingdom](#chapter-5-many-villages-no-kingdom)
 8. [Chapter 6 The Story of Decay and Replacement](#chapter-6-the-story-of-decay-and-replacement)  
-9. [Chapter 7 The Story of Trust and Honesty](#chapter-7-the story-of-trust-and-honesty)  
+9. [Chapter 7 The Story of Trust and Honesty](#chapter-7-the-story-of-trust-and-honesty)  
 10. [Chapter 8 Technology as a Tool](#chapter-8-technology-as-a-tool)  
 11. [Chapter 9 Becoming an Allocator](#chapter-9-becoming-an-allocator)  
 12. [Conclusion](#conclusion) 
