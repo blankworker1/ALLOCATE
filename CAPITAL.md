@@ -409,6 +409,7 @@ Capital allocates existence.
 
 Energy allocates operation.
 
+---
 
 ## Final Note
 
