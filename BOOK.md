@@ -20,7 +20,7 @@ A simple guide that teaches children and adults how energy, time, and human choi
 12. [Conclusion](#conclusion) 
 
 
-
+---
 
 ## Introduction A World of Choices
 
