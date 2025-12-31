@@ -24,7 +24,7 @@ A simple guide that teaches children and adults how energy, time, and human choi
 
 
 
-## Introduction - A World of Choices
+## Introduction A World of Choices
 
 Imagine a world where sunlight falls freely on rooftops, batteries hum quietly in homes, and machines wait patiently for instructions.
 
@@ -285,7 +285,7 @@ That is capital.
 
 ---
 
-## Chapter 1 - The Story of Energy
+## Chapter 1 The Story of Energy
 
 Imagine a village.
 
@@ -548,7 +548,7 @@ And once you see it, you cannot stop being an allocator.
 
 ---
 
-## Chapter 2 - The Story of Allocation
+## Chapter 2 The Story of Allocation
 
 Every day, the village wakes up with the same problem.
 
@@ -837,7 +837,7 @@ You are shaping it.
 
 ---
 
-## Chapter 3 - The Story of Measurement
+## Chapter 3 The Story of Measurement
 
 For a long time, the village lived by feeling.
 
@@ -884,7 +884,7 @@ Just to see.
 
 ---
 
-**Nothing Changed — At First**
+**Nothing Changed At First**
 
 The sun still rose. 
 
@@ -1119,7 +1119,7 @@ And when you stop arguing with reality you can finally work with it.
 
 ---
 
-## Chapter 4 - The Story of Surplus
+## Chapter 4 The Story of Surplus
 
 At first, the village only noticed shortage.
 
@@ -1406,7 +1406,7 @@ They prepare to meet it.
 
 ---
 
-## Chapter 5 - Many Villages, No Kingdom
+## Chapter 5 Many Villages, No Kingdom
 
 As time passed, the village was no longer alone.
 
@@ -1638,7 +1638,7 @@ When people share measurement instead of authority, cooperation becomes optional
 
 ---
 
-## Chapter 6 - The Story of Decay and Replacement
+## Chapter 6 The Story of Decay and Replacement
 
 
 Nothing in the village lasted forever.
@@ -1866,7 +1866,7 @@ That is what lasts.
 
 ---
 
-## Chapter 7 - The Story of Trust and Honesty
+## Chapter 7 The Story of Trust and Honesty
 
 
 At first, the villagers thought trust was something you had to create.
@@ -2088,7 +2088,7 @@ That is enough.
 
 ---
 
-## Chapter 8 - Technology as a Tool
+## Chapter 8 Technology as a Tool
 
 Villages had many machines.
 
@@ -2253,7 +2253,7 @@ Technology is powerful only when it obeys human intention.
 
 ---
 
-## Chapter 9 - Becoming an Allocator
+## Chapter 9 Becoming an Allocator
 
 The villages had learned many lessons:
 
