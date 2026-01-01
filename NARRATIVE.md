@@ -1,6 +1,6 @@
 # NARRATIVE
 
-## How Life Really Works
+## How Your Life Works
 
 Imagine it is raining. Not pretend rain. Real rain.
 
