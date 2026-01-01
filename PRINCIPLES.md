@@ -63,7 +63,7 @@ Every unit of harvested energy is explicitly assigned to a purpose: immediate us
 
 If it cannot be measured, it cannot be allocated.
 
-Energy flows, storage state, load behavior, and outputs are continuously measured in SI units. Measurement is not a reporting layer — it is the control layer.
+Energy flows, storage state, load behavior, and outputs are continuously measured in SI units. Measurement is not a reporting layer - it is the control layer.
 
 
 ---
@@ -74,7 +74,7 @@ Energy flows, storage state, load behavior, and outputs are continuously measure
 
 Capital exists to create or expand physical and operational capacity.
 
-Capital allocation does not seek abstraction or leverage. It is used to add panels, batteries, nodes, loads, and monitoring — things that exist and decay in the real world.
+Capital allocation does not seek abstraction or leverage. It is used to add panels, batteries, nodes, loads, and monitoring - things that exist and decay in the real world.
 
 Capital that does not change capacity is inert.
 
@@ -96,7 +96,7 @@ This is allocation, not obligation.
 
 Capital allocation unfolds over time and decays through use.
 
-Hardware degrades, environments change, and opportunity costs evolve. Capital is not preserved by accounting — only by continued productive allocation.
+Hardware degrades, environments change, and opportunity costs evolve. Capital is not preserved by accounting - only by continued productive allocation.
 
 Depreciation is physical, not financial.
 
