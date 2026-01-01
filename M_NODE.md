@@ -356,7 +356,7 @@ Using a PTZ security camera integrated with Home Assistant allows the camera to 
 
 **Examples**
 
-Detect motion near the miners (binary sensor motion_detected) → alert sent via Home Assistant.
+Use camera detect motion feature to send an alert via Home Assistant.
 
 Use camera day/night status change for automatic scheduling of "dawn" trigger for domestic loads  (physics-based scheduling).
 
@@ -367,13 +367,15 @@ Upload screen images to dashboard so users can see miners running, battery indic
 
 Automatic scheduling: Node responds to real light levels rather than fixed hours.
 
-Physically grounded: Ties allocation directly to real-world energy input (sunlight).
+Physically grounded: Ties allocation decisions directly to real-world energy input (sunlight).
 
 Flexible & Scalable: Works for single-node demo or multiple nodes in different time zones/latitudes.
 
 Low maintenance: No need to update clocks or daylight saving manually.
 
-Makes the concept of energy allocation and hardware operation tangible. The camera feed becomes part of the “living node” story.
+This makes the concept of energy allocation and hardware operation tangible.
+
+The camera feed becomes part of the “living node” story.
 
 
 
