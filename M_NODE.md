@@ -4,6 +4,7 @@ Minimal demonstration experiment using core D-NODE hardware and dashboard.
 
 Without the inclusion of industrial loads.
 
+---
 
 ## M-Node Configuration
 
@@ -22,6 +23,8 @@ PV Array, Single 2 kW trailer-mounted array, Cerbo GX
 Battery Bank, 2–5 kWh battery,  BMS and level monitoring via Cerbo GX Sensor
 Domestic Load 6 x 10w smart light bulbs, ZigBee 
 Flexible Load, 3 × NerdAxe Gamma ASIC miners, Braiins os dashboard app / API
+
+---
 
 ## 2. Required Sensors
 
@@ -57,6 +60,8 @@ Step schedule: miners engage only if PV > Domestic + battery demand
 Node Status / Connectivity
 binary_sensor.node_connected – True if all hardware reporting
 sensor.allocate_status – Dashboard state: Default, Green, Red
+
+---
 
 ## 3. Allocation Logic
 
