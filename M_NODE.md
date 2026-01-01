@@ -1,6 +1,8 @@
 # M-NODE
 
-Minimal demonstration experiment using core D-NODE hardware and dashboard. Without the inclusion of industrial loads.
+Minimal demonstration experiment using core D-NODE hardware and dashboard.
+
+Without the inclusion of industrial loads.
 
 
 ## M-Node Configuration
@@ -133,8 +135,31 @@ Alerts
 
 Historical data display (allocation efficiency over multiple days)
 
+---
 
+## M-Node Implementation Steps
 
+Install Home Assistant Core on Green hardware device.
+
+Connect PV Inverter & Battery via Cerbo GX device.
+
+Connect ZigBee router for live readings from smart sockets and bulbs.
+
+Connect domestic loads (light bulbs).
+
+Connect Nerdaxe ASIC miners to smart sockets.
+
+Copy YAML into configuration.yaml, restart HA.
+
+Install ApexCharts Card (HACS) for time-series visualization.
+
+Verify sensors are reporting real values: PV, battery SOC, domestic load.
+
+Configure step schedule for domestic load in HA templates.
+
+Test ASIC logic: miners should only turn on if PV exceeds domestic + battery demand.
+
+Observe dashboard over 24 hr period. PV curve, battery SOC, domestic load steps, and ASIC load steps should match graph prompt.
 
 
 
