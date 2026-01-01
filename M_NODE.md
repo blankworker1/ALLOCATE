@@ -186,6 +186,9 @@ Test ASIC logic - miners should only turn on if PV exceeds domestic + battery de
 
 Observe dashboard over 24 hr period. PV curve, battery SOC, domestic load steps, and ASIC load steps should match graph.
 
+
+
+
 ![24 hour performance graph](https://emerald-real-clownfish-172.mypinata.cloud/ipfs/bafkreigxpa5ld7k7ed5gaub3nrbyoxmsjaim6vtabbrlqmrraybta5uyf4)
 
 
