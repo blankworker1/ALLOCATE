@@ -1,6 +1,6 @@
 # NARRATIVE
 
-## How an Economy Really Works
+## How Life Really Works
 
 Imagine it is raining. Not pretend rain. Real rain.
 
