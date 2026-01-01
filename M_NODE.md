@@ -22,7 +22,7 @@ Asset Type / Description / Control Type
 
 PV Array, Single 2 kW trailer-mounted array, Cerbo GX
 
-Battery Bank, 2–5 kWh battery,  BMS and level monitoring via Cerbo GX Sensor
+Battery Bank, 2–5 kWh battery,  BMS and level monitoring via Cerbo GX
 
 Domestic Load, 6 x 10w smart light bulbs, ZigBee 
 
