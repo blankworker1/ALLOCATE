@@ -184,7 +184,7 @@ Configure step schedule for domestic load in HA templates.
 
 Test ASIC logic - miners should only turn on if PV exceeds domestic + battery demand.
 
-Observe dashboard over 24 hr period. PV curve, battery SOC, domestic load steps, and ASIC load steps should match graph.
+Observe dashboard over 24 hr period. PV curve, battery SOC, domestic load steps, and ASIC load steps should match graph shown below.
 
 
 
