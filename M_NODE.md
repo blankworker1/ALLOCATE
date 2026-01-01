@@ -19,9 +19,13 @@ The system demonstrates 100% energy allocation efficiency, balancing PV generati
 ## 1. Allocatable Assets & Loads
 
 Asset Type / Description / Control Type
+
 PV Array, Single 2 kW trailer-mounted array, Cerbo GX
+
 Battery Bank, 2–5 kWh battery,  BMS and level monitoring via Cerbo GX Sensor
-Domestic Load 6 x 10w smart light bulbs, ZigBee 
+
+Domestic Load, 6 x 10w smart light bulbs, ZigBee 
+
 Flexible Load, 3 × NerdAxe Gamma ASIC miners, Braiins os dashboard app / API
 
 ---
