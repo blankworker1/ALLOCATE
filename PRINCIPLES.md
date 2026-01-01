@@ -37,7 +37,7 @@ Allocation without consequences is accounting fiction.
 
 ---
 
-##Allocate Energy — Three Principles
+##Allocate Energy - Three Principles
 
 ### E1. Energy Is Local
 
@@ -68,7 +68,7 @@ Energy flows, storage state, load behavior, and outputs are continuously measure
 
 ---
 
-##Allocate Capital — Three Principles
+##Allocate Capital - Three Principles
 
 ### C1. Capital Enables Capacity
 
