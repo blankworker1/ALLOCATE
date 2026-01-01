@@ -1,4 +1,4 @@
-loo# M-NODE
+# M-NODE
 
 Minimal demonstration experiment using core D-NODE hardware and dashboard.
 
