@@ -34,35 +34,50 @@ Flexible Load, 3 × NerdAxe Gamma ASIC miners, Braiins os dashboard app / API
 
 To fully monitor real hardware in Home Assistant:
 
-Generation
+**Generation**
 
 sensor.pv_power – Instantaneous PV output (W)
+
 sensor.pv_energy_today – Cumulative generation (Wh)
 
-Storage
+**Storage**
+
 sensor.battery_voltage – V
+
 sensor.battery_current – A
+
 sensor.battery_soc – % state of charge
+
 sensor.battery_power – W (charge/discharge)
 
-Consumption
+**Consumption**
 
-Domestic Load
+**Domestic Load**
+
 sensor.domestic_power – Stepwise power (W)
+
 sensor.domestic_energy – Cumulative energy (Wh)
+
 Step schedule example:
+
 Night baseline: 120 W
+
 Daytime: 240 W
+
 Evening peak: 300–360 W
 
-Flexible Load (ASIC miners)
+**Flexible Load (ASIC miners)**
+
 sensor.asic1_power, sensor.asic2_power, sensor.asic3_power – Individual (W)
+
 sensor.asic_total_energy – Individual (Wh)
 
 Step schedule: miners engage only if PV > Domestic + battery demand
 
-Node Status / Connectivity
+**Node Status / Connectivity**
+
 binary_sensor.node_connected – True if all hardware reporting
+
 sensor.allocate_status – Dashboard state: Default, Green, Red
 
 ---
@@ -116,6 +131,7 @@ Main Graph: PV generation (curve), battery SOC (secondary axis), domestic load (
 Clock Ring: 24 hr view with 10 min blocks, showing allocation in time.
 
 Status Boxes:
+
 ALLOCATE – Default (white), Green (working), Red (out-of-parameter)
 
 CONNECTIVITY – Default (white), CONNECTED (green), DISCONNECTED (red)
@@ -166,7 +182,7 @@ Verify sensors are reporting real values: PV, battery SOC, domestic load.
 
 Configure step schedule for domestic load in HA templates.
 
-Test ASIC logic: miners should only turn on if PV exceeds domestic + battery demand.
+Test ASIC logic - miners should only turn on if PV exceeds domestic + battery demand.
 
 Observe dashboard over 24 hr period. PV curve, battery SOC, domestic load steps, and ASIC load steps should match graph prompt.
 
