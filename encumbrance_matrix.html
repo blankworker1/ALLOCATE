@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Encumbrance Matrix</title>
+<style>
+  :root{
+    --paper:#F6F4EF; --paper-2:#ECE9E0; --ink:#25272B; --ink-soft:#6B6D70;
+    --line:#D8D4C8; --accent:#1F3A52; --accent-soft:#5C7A91;
+    --coral:#D85A30; --blue:#378ADD; --amber:#BA7517; --gray:#5F5E5A;
+    --mono: ui-monospace, 'SFMono-Regular', 'IBM Plex Mono', Menlo, monospace;
+    --sans: -apple-system, 'Inter', 'Segoe UI', system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --paper:#1B1C1E; --paper-2:#232426; --ink:#E8E6DF; --ink-soft:#9A9C9E; --line:#3A3B3D; }
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; padding:32px 16px 64px; background:var(--paper); color:var(--ink);
+    font-family:var(--sans); display:flex; flex-direction:column; align-items:center;
+  }
+  h1{font-size:19px; font-weight:500; letter-spacing:0.2px; margin:0 0 4px;}
+  .sub{font-family:var(--mono); font-size:12px; color:var(--ink-soft); margin:0 0 24px; text-align:center; max-width:520px;}
+  .board-shell{
+    background:var(--paper-2); border:1px solid var(--line); border-radius:12px;
+    padding:12px; max-width:720px; width:100%; position:relative;
+  }
+  svg{width:100%; height:auto; display:block; touch-action:none;}
+  .t{font-size:14px; font-family:var(--sans); fill:var(--ink);}
+  .ts{font-size:12px; font-family:var(--sans); fill:var(--ink-soft);}
+  .th{font-size:14px; font-weight:500; font-family:var(--sans); fill:var(--ink);}
+  .axis-line{stroke:var(--line); stroke-width:1;}
+  .ring{stroke:var(--line); stroke-width:1; stroke-dasharray:3 4; fill:none;}
+  .u-dot{stroke:var(--paper-2); stroke-width:1.5;}
+  .p-dot{fill:var(--paper-2); stroke-width:2; cursor:grab;}
+  .p-dot.selected{stroke-width:3; filter:brightness(1.15);}
+  .p-dot:active{cursor:grabbing;}
+  .add-crosshair{cursor:crosshair;}
+
+  .toolbar{
+    display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin:16px 0 6px;
+    max-width:720px; width:100%;
+  }
+  button{
+    font-family:var(--sans); font-size:13px; font-weight:500; padding:8px 14px;
+    border-radius:8px; border:1px solid var(--line); background:var(--paper-2);
+    color:var(--ink); cursor:pointer;
+  }
+  button.primary{background:var(--accent); border-color:var(--accent); color:#F6F4EF;}
+  button.active{background:var(--accent-soft); border-color:var(--accent-soft); color:#fff;}
+  button:disabled{opacity:0.4; cursor:not-allowed;}
+  .hint{font-family:var(--mono); font-size:12px; color:var(--ink-soft); min-height:16px;}
+
+  .note-row{max-width:720px; width:100%; margin-top:14px;}
+  .note-row label{display:block; font-size:12px; color:var(--ink-soft); margin-bottom:6px;}
+  .note-row input{
+    width:100%; font-family:var(--mono); font-size:13px; padding:10px 12px;
+    border-radius:8px; border:1px solid var(--line); background:var(--paper-2); color:var(--ink);
+  }
+
+  .legend{
+    max-width:720px; width:100%; margin-top:14px; font-family:var(--mono); font-size:11px;
+    color:var(--ink-soft); display:flex; flex-wrap:wrap; gap:14px;
+  }
+  .legend span{display:inline-flex; align-items:center; gap:6px;}
+  .swatch{width:10px; height:10px; border-radius:50%; display:inline-block;}
+
+  .save-row{max-width:720px; width:100%; margin-top:20px; display:flex; justify-content:flex-end;}
+
+  .explainer{
+    max-width:720px; width:100%; margin-bottom:24px; border:1px solid var(--line);
+    border-radius:12px; background:var(--paper-2); padding:20px 22px;
+  }
+  .explainer h2{font-size:16px; font-weight:500; margin:0 0 8px;}
+  .explainer h3{font-size:13px; font-weight:500; margin:18px 0 6px; color:var(--ink-soft); text-transform:uppercase; letter-spacing:0.4px;}
+  .explainer p{font-size:14px; line-height:1.6; margin:0 0 4px; color:var(--ink);}
+  .explainer ul{margin:6px 0 0; padding-left:18px;}
+  .explainer li{font-size:14px; line-height:1.6; margin-bottom:6px;}
+  .explainer .cat-list{list-style:none; padding-left:0;}
+  .explainer .cat-list li{display:flex; align-items:flex-start; gap:8px;}
+  .explainer .cat-list .swatch{margin-top:6px; flex-shrink:0;}
+  details.explainer-toggle summary{
+    font-size:13px; font-family:var(--mono); color:var(--accent-soft); cursor:pointer;
+    margin-top:12px; list-style:none;
+  }
+  details.explainer-toggle summary::-webkit-details-marker{display:none;}
+  details.explainer-toggle summary::before{content:"▸ "; }
+  details.explainer-toggle[open] summary::before{content:"▾ "; }
+
+  .popover{
+    position:absolute; background:var(--paper); border:1px solid var(--line); border-radius:8px;
+    padding:10px; box-shadow:0 4px 16px rgba(0,0,0,0.18); display:none; z-index:10; width:220px;
+  }
+  .popover input{
+    width:100%; font-family:var(--sans); font-size:13px; padding:7px 8px; margin-bottom:8px;
+    border-radius:6px; border:1px solid var(--line); background:var(--paper-2); color:var(--ink);
+  }
+  .popover .cats{display:flex; gap:6px; margin-bottom:8px;}
+  .popover .cat-btn{
+    flex:1; height:26px; border-radius:6px; border:1.5px solid transparent; cursor:pointer; padding:0;
+  }
+  .popover .cat-btn.chosen{border-color:var(--ink);}
+  .popover .row{display:flex; gap:6px; justify-content:flex-end;}
+  .popover button{padding:6px 10px; font-size:12px;}
+</style>
+</head>
+<body>
+
+<h1>Encumbrance Matrix</h1>
+
+<div class="explainer">
+  <h2>What this is</h2>
+  <p>An encumbrance is anything that isn't fully your own choice — a person, institution, or condition with a claim on your time, money, or decisions. This board plots the encumbrances that fall on most adult lives, positioned by what kind of hold they have on you and how hard that hold is to loosen. The further a dot sits from the center, the more difficult it is to become free of it.</p>
+
+  <h3>The two axes</h3>
+  <ul>
+    <li><strong>Coercion vs. scarcity</strong> (left–right) — Coercion means a specific entity with its own will has power over you: it can compel you, grant you permission, or withdraw something you need. Scarcity means no one is imposing anything — a resource (time, money) is simply finite, and that finiteness constrains you regardless of anyone's intent.</li>
+    <li><strong>Systemic vs. individual</strong> (top–bottom) — Systemic means the constraint comes from a structure with no alternate counterparty: you can't escape the tax system by picking a different taxman. Individual means it's a specific relationship — this landlord, this employer — that could in principle be renegotiated, ended, or replaced with a different one.</li>
+  </ul>
+
+  <details class="explainer-toggle">
+    <summary>Why some dots are a blend, and the four categories</summary>
+    <p style="margin-top:10px;">A few encumbrances pull on both axis ends at once. A credit card company has a will (coercion) but the actual mechanism it uses is engineered scarcity of money through compounding debt. These sit in their own hybrid color rather than being forced onto one side.</p>
+    <ul class="cat-list">
+      <li><span class="swatch" style="background:#D85A30"></span><span><strong>Coercion</strong> — a specific entity holding power over you.</span></li>
+      <li><span class="swatch" style="background:#378ADD"></span><span><strong>Scarcity</strong> — a finite resource with no one imposing it.</span></li>
+      <li><span class="swatch" style="background:#BA7517"></span><span><strong>Hybrid</strong> — coercion exercised through manufactured scarcity.</span></li>
+      <li><span class="swatch" style="background:#5F5E5A"></span><span><strong>Dependency/obligation</strong> — something you need or owe, without either side holding power over the other (a doctor, a family relationship).</span></li>
+    </ul>
+    <p style="margin-top:10px;">The 13 solid dots are fixed — they're close to universal for anyone in a modern economy. Add your own for anything specific to your situation (a business partner, a health condition, a custody arrangement), drag them to where they actually sit for you, and save a dated snapshot with a note. Revisited periodically, the set of snapshots becomes a record of which encumbrances you've loosened and which have crept back in.</p>
+  </details>
+</div>
+
+<p class="sub">Universal encumbrances are fixed. Add your own, drag them to where they sit for you, then save the snapshot.</p>
+
+<div class="board-shell">
+  <svg id="board" viewBox="0 0 680 660" xmlns="http://www.w3.org/2000/svg">
+    <!-- rings -->
+    <circle class="ring" cx="340" cy="340" r="150"/>
+    <circle class="ring" cx="340" cy="340" r="280"/>
+    <!-- axes -->
+    <line class="axis-line" x1="340" y1="60" x2="340" y2="580"/>
+    <line class="axis-line" x1="60" y1="340" x2="620" y2="340"/>
+    <!-- axis labels -->
+    <text class="th" x="340" y="45" text-anchor="middle">Systemic</text>
+    <text class="th" x="340" y="600" text-anchor="middle">Individual</text>
+    <text class="th" x="45" y="320" text-anchor="start">Coercion</text>
+    <text class="th" x="635" y="320" text-anchor="end">Scarcity</text>
+
+    <!-- universal dots: coercion -->
+    <g fill="#D85A30">
+      <circle class="u-dot" cx="160" cy="140" r="6"/>
+      <circle class="u-dot" cx="100" cy="100" r="6"/>
+      <circle class="u-dot" cx="220" cy="180" r="6"/>
+      <circle class="u-dot" cx="190" cy="460" r="6"/>
+      <circle class="u-dot" cx="140" cy="540" r="6"/>
+      <circle class="u-dot" cx="100" cy="500" r="6"/>
+    </g>
+    <text class="ts" x="172" y="144">Taxman</text>
+    <text class="ts" x="112" y="104">Immigration/citizenship</text>
+    <text class="ts" x="328" y="184" text-anchor="end">Regulatory/licensing</text>
+    <text class="ts" x="202" y="464">Boss</text>
+    <text class="ts" x="152" y="544">Landlord</text>
+    <text class="ts" x="112" y="504">Spouse/partner w/ claim</text>
+
+    <!-- universal dots: hybrid -->
+    <g fill="#BA7517">
+      <circle class="u-dot" cx="260" cy="560" r="6"/>
+      <circle class="u-dot" cx="500" cy="420" r="6"/>
+      <circle class="u-dot" cx="450" cy="220" r="6"/>
+    </g>
+    <text class="ts" x="272" y="564">Credit card cos.</text>
+    <text class="ts" x="488" y="416" text-anchor="end">Bank</text>
+    <text class="ts" x="462" y="216">Insurance requirements</text>
+
+    <!-- universal dots: scarcity -->
+    <g fill="#378ADD">
+      <circle class="u-dot" cx="520" cy="140" r="6"/>
+    </g>
+    <text class="ts" x="532" y="144">Inflation</text>
+
+    <!-- universal dots: dependency -->
+    <g fill="#5F5E5A">
+      <circle class="u-dot" cx="300" cy="400" r="6"/>
+      <circle class="u-dot" cx="390" cy="370" r="6"/>
+      <circle class="u-dot" cx="380" cy="450" r="6"/>
+    </g>
+    <text class="ts" x="288" y="418" text-anchor="end">Doctor</text>
+    <text class="ts" x="402" y="374">Family/social</text>
+    <text class="ts" x="392" y="454">Internet/utility providers</text>
+
+    <!-- personal overlay dots go here -->
+    <g id="overlay"></g>
+  </svg>
+
+  <div class="popover" id="popover">
+    <input type="text" id="pop-label" placeholder="Label this encumbrance">
+    <div class="cats">
+      <button class="cat-btn chosen" style="background:#D85A30" data-cat="coral" title="Coercion"></button>
+      <button class="cat-btn" style="background:#378ADD" data-cat="blue" title="Scarcity"></button>
+      <button class="cat-btn" style="background:#BA7517" data-cat="amber" title="Hybrid"></button>
+      <button class="cat-btn" style="background:#5F5E5A" data-cat="gray" title="Dependency/obligation"></button>
+    </div>
+    <div class="row">
+      <button id="pop-cancel">Cancel</button>
+      <button id="pop-confirm" class="primary">Add</button>
+    </div>
+  </div>
+</div>
+
+<div class="toolbar">
+  <button id="add-btn">+ Add dot</button>
+  <button id="remove-btn" disabled>Remove selected</button>
+  <span class="hint" id="hint"></span>
+</div>
+
+<div class="legend">
+  <span><span class="swatch" style="background:#D85A30"></span>Coercion</span>
+  <span><span class="swatch" style="background:#378ADD"></span>Scarcity</span>
+  <span><span class="swatch" style="background:#BA7517"></span>Hybrid</span>
+  <span><span class="swatch" style="background:#5F5E5A"></span>Dependency/obligation</span>
+  <span>&nbsp;·&nbsp;solid = universal (fixed) &nbsp;·&nbsp; outlined = personal (drag / click to select)</span>
+</div>
+
+<div class="note-row">
+  <label for="note">Snapshot note</label>
+  <input id="note" type="text" placeholder="e.g. Q1 2027 — landlord dot moved in, bank dot moved out">
+</div>
+
+<div class="save-row">
+  <button id="save-btn" class="primary">Save as PNG</button>
+</div>
+
+<script>
+const svg = document.getElementById('board');
+const overlay = document.getElementById('overlay');
+const popover = document.getElementById('popover');
+const addBtn = document.getElementById('add-btn');
+const removeBtn = document.getElementById('remove-btn');
+const hint = document.getElementById('hint');
+const catColors = {coral:'#D85A30', blue:'#378ADD', amber:'#BA7517', gray:'#5F5E5A'};
+
+let addMode = false;
+let selected = null;
+let dragging = null;
+let pendingPoint = null;
+let chosenCat = 'coral';
+let dotSeq = 0;
+
+function svgPoint(evt){
+  const pt = svg.createSVGPoint();
+  const src = evt.touches ? evt.touches[0] : evt;
+  pt.x = src.clientX; pt.y = src.clientY;
+  const ctm = svg.getScreenCTM().inverse();
+  const p = pt.matrixTransform(ctm);
+  return {x: Math.max(20, Math.min(660, p.x)), y: Math.max(20, Math.min(640, p.y))};
+}
+
+function setHint(msg){ hint.textContent = msg; }
+
+addBtn.addEventListener('click', () => {
+  addMode = !addMode;
+  addBtn.classList.toggle('active', addMode);
+  svg.classList.toggle('add-crosshair', addMode);
+  setHint(addMode ? 'Click anywhere on the board to place a dot' : '');
+});
+
+svg.addEventListener('click', (evt) => {
+  if (!addMode) return;
+  if (evt.target.closest('.p-dot')) return;
+  pendingPoint = svgPoint(evt);
+  openPopover(evt.clientX, evt.clientY);
+});
+
+function openPopover(clientX, clientY){
+  const shell = svg.closest('.board-shell').getBoundingClientRect();
+  popover.style.left = Math.min(clientX - shell.left, shell.width - 232) + 'px';
+  popover.style.top = (clientY - shell.top) + 'px';
+  popover.style.display = 'block';
+  chosenCat = 'coral';
+  document.querySelectorAll('.cat-btn').forEach(b => b.classList.toggle('chosen', b.dataset.cat === 'coral'));
+  document.getElementById('pop-label').value = '';
+  document.getElementById('pop-label').focus();
+}
+
+document.querySelectorAll('.cat-btn').forEach(b => {
+  b.addEventListener('click', () => {
+    chosenCat = b.dataset.cat;
+    document.querySelectorAll('.cat-btn').forEach(x => x.classList.toggle('chosen', x === b));
+  });
+});
+
+document.getElementById('pop-cancel').addEventListener('click', () => {
+  popover.style.display = 'none';
+});
+
+document.getElementById('pop-confirm').addEventListener('click', () => {
+  const label = document.getElementById('pop-label').value.trim() || 'Untitled';
+  if (pendingPoint) addDot(pendingPoint.x, pendingPoint.y, label, chosenCat);
+  popover.style.display = 'none';
+  addMode = false;
+  addBtn.classList.remove('active');
+  svg.classList.remove('add-crosshair');
+  setHint('');
+});
+
+function addDot(x, y, label, cat){
+  const id = 'p' + (++dotSeq);
+  const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+  g.setAttribute('data-id', id);
+  g.innerHTML = `
+    <circle class="p-dot" cx="${x}" cy="${y}" r="7" stroke="${catColors[cat]}"/>
+    <text class="ts" x="${x+10}" y="${y+4}">${label}</text>
+  `;
+  overlay.appendChild(g);
+  attachDotEvents(g);
+}
+
+function attachDotEvents(g){
+  const circle = g.querySelector('circle');
+  circle.addEventListener('mousedown', (evt) => startDrag(evt, g));
+  circle.addEventListener('touchstart', (evt) => startDrag(evt, g), {passive:true});
+  circle.addEventListener('dblclick', () => { g.remove(); if (selected===g) deselect(); });
+}
+
+function startDrag(evt, g){
+  dragging = {g, moved:false};
+  const move = (e) => {
+    dragging.moved = true;
+    const p = svgPoint(e);
+    g.querySelector('circle').setAttribute('cx', p.x);
+    g.querySelector('circle').setAttribute('cy', p.y);
+    g.querySelector('text').setAttribute('x', p.x+10);
+    g.querySelector('text').setAttribute('y', p.y+4);
+  };
+  const up = () => {
+    document.removeEventListener('mousemove', move);
+    document.removeEventListener('mouseup', up);
+    document.removeEventListener('touchmove', move);
+    document.removeEventListener('touchend', up);
+    if (!dragging.moved) selectDot(g);
+    dragging = null;
+  };
+  document.addEventListener('mousemove', move);
+  document.addEventListener('mouseup', up);
+  document.addEventListener('touchmove', move, {passive:true});
+  document.addEventListener('touchend', up);
+}
+
+function selectDot(g){
+  if (selected) selected.querySelector('circle').classList.remove('selected');
+  selected = g;
+  g.querySelector('circle').classList.add('selected');
+  removeBtn.disabled = false;
+}
+
+function deselect(){
+  selected = null;
+  removeBtn.disabled = true;
+}
+
+removeBtn.addEventListener('click', () => {
+  if (selected) { selected.remove(); deselect(); }
+});
+
+document.getElementById('save-btn').addEventListener('click', () => {
+  const clone = svg.cloneNode(true);
+  clone.setAttribute('width', 680);
+  clone.setAttribute('height', 660);
+  const svgStr = new XMLSerializer().serializeToString(clone);
+  const svgBlob = new Blob([svgStr], {type:'image/svg+xml;charset=utf-8'});
+  const url = URL.createObjectURL(svgBlob);
+  const img = new Image();
+  img.onload = () => {
+    const note = document.getElementById('note').value.trim();
+    const noteHeight = note ? 60 : 30;
+    const canvas = document.createElement('canvas');
+    canvas.width = 680;
+    canvas.height = 660 + noteHeight;
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = '#F6F4EF';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(img, 0, 0);
+    ctx.fillStyle = '#6B6D70';
+    ctx.font = '12px monospace';
+    const stamp = new Date().toISOString().slice(0,10);
+    ctx.fillText('Snapshot: ' + stamp, 24, 660 + 22);
+    if (note) ctx.fillText(note, 24, 660 + 44);
+    const a = document.createElement('a');
+    a.download = 'encumbrance-matrix-' + stamp + '.png';
+    a.href = canvas.toDataURL('image/png');
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+  img.src = url;
+});
+</script>
+</body>
+</html>
